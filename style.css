@@ -19,7 +19,8 @@ img {
 }
 
 .container {
-  width: ;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -33,12 +34,12 @@ img {
 }
 
 .topo h1 {
-  font-size: ;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   margin-bottom: 0.5rem;
 }
 
 .topo p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 /* MENU */
@@ -123,9 +124,9 @@ img {
 }
 
 .cards {
-  display: ;
-  grid-template-columns: ;
-  gap: ;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
@@ -146,9 +147,9 @@ img {
 }
 
 .grid-galeria {
-  display: ;
-  grid-template-columns: ;
-  gap: ;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
 }
 
 .box {
@@ -167,7 +168,7 @@ img {
 }
 
 .tabela-wrapper {
-
+  overflow: auto;
   background-color: white;
   border-radius: 12px;
   padding: 1rem;
@@ -175,9 +176,9 @@ img {
 }
 
 table {
-  
-  
-
+  width: 100%;
+  min-height: 600px;
+  border-collapse: collapse;
 }
 
 th, td {
@@ -209,11 +210,11 @@ th {
   }
 
   .cards {
-    
+    grid-template-columns: 1fr 1fr;
   }
 
   .grid-galeria {
-    
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
